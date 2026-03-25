@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <LinearLayout
+        android:id="@+id/toolbarMisReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#33000000">
+
+        <ImageButton
+            android:id="@+id/btnBackToCalendar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIS RESERVAS"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:fontFamily="@font/goldman_regular"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvReservas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarMisReservas"
+        android:padding="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:id="@+id/tvSinReservas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No tienes reservas registradas."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
