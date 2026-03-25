@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_primera_interfaz_reporte"
+        android:title="Crear reporte" />
+
+    <item
+        android:id="@+id/nav_historial_reportes"
+        android:title="Mis reportes" />
+
+    <item
+        android:id="@+id/nav_reportes_admin"
+        android:title="Reportes admin" />
+
+    <item
+        android:id="@+id/nav_historial_admin"
+        android:title="Historial admin" />
+
+</menu>

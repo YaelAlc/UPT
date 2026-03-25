@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UPT</string>
+    <string name="reporte">Reporte</string>
+    <string name="descripcion">Descripción</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="edificio">Edificio</string>
+    <string name="salon">Salón</string>
+    <string name="seleccionar_imagen">Seleccionar Imagen</string>
+    <string name="subir_evidencia">Subir Evidencia</string>
+    <string name="historial_reportes">Historial Reportes</string>
+    <string name="estado">Estado</string>
+    <string name="reportes">Reportes</string>
+</resources>
