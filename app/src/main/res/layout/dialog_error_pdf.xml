@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/boton_redondeado"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Error de formato!"
+        android:textColor="#590000"
+        android:textSize="22sp"
+        android:fontFamily="@font/goldman_regular"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El archivo seleccionado debe ser un PDF válido."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTENDIDO"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/goldman_regular"
+        android:background="@drawable/boton_redondeado"
+        android:backgroundTint="#590000" />
+
+</LinearLayout>

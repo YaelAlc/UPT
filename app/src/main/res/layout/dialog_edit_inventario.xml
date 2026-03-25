@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/boton_redondeado"
+        android:backgroundTint="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvEditTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Equipo"
+            android:textColor="#590000"
+            android:textSize="20sp"
+            android:fontFamily="@font/goldman_regular"
+            android:layout_marginBottom="20dp" />
+
+        <!-- CATEGORIA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría del equipo:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEditCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Cardio, Fuerza..."
+            android:inputType="text"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- AREA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Área de ubicación:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEditArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Zona A, Zona B..."
+            android:inputType="text"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- TOTALES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidades totales en el gimnasio:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEditTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- DISPONIBLES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidades disponibles para uso:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEditDisp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- DESCRIPCION DANIO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción del estado o daños:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEditDanio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba aquí si hay averías..."
+            android:inputType="textMultiLine"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuardarEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="GUARDAR CAMBIOS"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/goldman_regular"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#590000" />
+
+    </LinearLayout>
+</ScrollView>
