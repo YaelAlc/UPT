@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- CONTENEDOR BLANCO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <!-- TITULO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Términos y Condiciones del Gimnasio"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/goldman_regular"
+                android:textColor="#D4AF37"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- TEXTO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. El uso del gimnasio es responsabilidad del usuario.\n\n2. Debe presentar certificado médico vigente.\n\n3. Se debe respetar el equipo del gimnasio.\n\n4. No se permite el uso sin reserva previa.\n\n5. El incumplimiento de reglas puede causar suspensión."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <!-- BOTON -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAceptar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Aceptar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="@color/guinda"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

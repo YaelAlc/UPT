@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- LOGOS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/logo"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/logo_upt"/>
+        </LinearLayout>
+
+        <!-- TITULO -->
+        <TextView
+            android:text="ACCESO ADMINISTRATIVO"
+            android:fontFamily="@font/goldman_regular"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#D4AF37"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Por favor, ingrese sus credenciales para continuar."
+            android:fontFamily="@font/inter_regular"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- CAMPOS DE LOGIN -->
+        <TextView
+            android:text="Matrícula"
+            android:textColor="#000000"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtAdminMatricula"
+            android:hint="Ingrese su matrícula"
+            android:fontFamily="@font/inter_regular"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="16dp"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Contraseña"
+            android:textColor="#000000"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtAdminPassword"
+            android:hint="Ingrese su contraseña"
+            android:fontFamily="@font/inter_regular"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#EEEEEE"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- BOTON ENTRAR -->
+
+        <!-- ESPACIO FLEXIBLE -->
+        <Button
+            android:id="@+id/btnEntrarAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#7A0C0C"
+            android:fontFamily="@font/goldman_regular"
+            android:text="INICIAR SESIÓN"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- RADIO USUARIO -->
+        <RadioGroup
+            android:id="@+id/rgTipoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/white"
+            android:padding="12dp">
+
+            <RadioButton
+                android:id="@+id/rbAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADMINISTRADOR"
+                android:textStyle="bold"
+                android:checked="true"
+                android:textColor="#7A0C0C"
+                android:layout_marginEnd="40dp"/>
+
+            <RadioButton
+                android:id="@+id/rbUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USUARIO"
+                android:textStyle="bold"
+                android:textColor="#7A0C0C"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -4,9 +4,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_main">
 
-    <!-- TOOLBAR -->
     <LinearLayout
-        android:id="@+id/toolbarAdmin"
+        android:id="@+id/toolbarCalendario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -15,55 +14,94 @@
         android:background="#33000000">
 
         <ImageButton
-            android:id="@+id/btnBackToUserMode"
+            android:id="@+id/btnBackToDocs"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@android:drawable/ic_menu_revert"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@android:color/white"
-            android:contentDescription="Regresar" />
+            android:contentDescription="Regresar"
+            android:tint="@android:color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MENÚ ADMINISTRADOR"
+            android:text="RESERVAR HORARIO"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:fontFamily="@font/goldman_regular"
             android:layout_marginStart="15dp" />
     </LinearLayout>
 
-    <!-- MENU OPTIONS -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarAdmin"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="24dp">
+        android:layout_below="@id/toolbarCalendario"
+        android:fillViewport="true">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnGestionInventario"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="GESTIÓN DE INVENTARIO"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:fontFamily="@font/goldman_regular"
-            android:background="@drawable/boton_redondeado"
-            android:backgroundTint="#590000"
-            android:layout_marginBottom="25dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnMarcarAsistencias"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="MARCAR ASISTENCIAS"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:fontFamily="@font/goldman_regular"
-            android:background="@drawable/boton_redondeado"
-            android:backgroundTint="#590000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione Fecha"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/goldman_regular"
+                android:layout_marginBottom="10dp" />
 
-    </LinearLayout>
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione Hora"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/goldman_regular"
+                android:layout_marginBottom="10dp" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="40dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFinalizarReserva"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="CONFIRMAR RESERVA"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/goldman_regular"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="#590000"
+                android:layout_marginBottom="15dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerMisReservas"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="VER MIS RESERVAS"
+                android:textColor="#590000"
+                android:fontFamily="@font/goldman_regular"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

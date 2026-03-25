@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <!-- BARRA SUPERIOR CON FLECHA DE REGRESO -->
+    <LinearLayout
+        android:id="@+id/toolbarGimnasio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#33000000">
+
+        <ImageButton
+            android:id="@+id/btnBackToHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Regresar"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIMNASIO UPT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:fontFamily="@font/goldman_regular"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarGimnasio"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- HEADER LOGOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo"
+                    android:contentDescription="Logo Gimnasio"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="BIENVENIDO"
+                android:textSize="34sp"
+                android:fontFamily="@font/goldman_regular"
+                android:textColor="#D4AF37"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Para poder reservar el gimnasio debes subir los siguientes documentos."
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="SUBE CADA DOCUMENTO EN PDF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/goldman_regular"
+                android:textColor="#590000"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- VIGENCIA -->
+            <TextView
+                android:text="• Vigencia de derechos"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#000000"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnVigencia"
+                android:text="Subir PDF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/verVigencia"
+                android:text="Ver documento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- CERTIFICADO -->
+            <TextView
+                android:text="• Certificado médico"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#000000"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnCertificado"
+                android:text="Subir PDF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/verCertificado"
+                android:text="Ver documento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- CREDENCIAL -->
+            <TextView
+                android:text="• Credencial de estudiante"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#000000"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnCredencial"
+                android:text="Subir PDF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/verCredencial"
+                android:text="Ver documento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- CARTA -->
+            <TextView
+                android:text="• Carta responsiva"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#000000"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnCarta"
+                android:text="Subir PDF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/verCarta"
+                android:text="Ver documento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- BOTON GUARDAR -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCrearReserva"
+                android:text="Guardar"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="@color/guinda"/>
+
+            <!-- TERMINOS -->
+            <CheckBox
+                android:id="@+id/checkTerminos"
+                android:text="Acepto los términos y condiciones (ver)"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- RADIO USUARIO -->
+            <RadioGroup
+                android:id="@+id/rgTipoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/boton_redondeado"
+                android:backgroundTint="#FFFFFF"
+                android:padding="12dp">
+
+                <RadioButton
+                    android:id="@+id/rbAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADMINISTRADOR"
+                    android:textStyle="bold"
+                    android:textColor="#7A0C0C"
+                    android:layout_marginEnd="40dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USUARIO"
+                    android:textStyle="bold"
+                    android:textColor="#7A0C0C"
+                    android:checked="true"/>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

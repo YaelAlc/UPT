@@ -1,69 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_main">
 
-    <!-- TOOLBAR -->
-    <LinearLayout
-        android:id="@+id/toolbarAdmin"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    >
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:gravity="center_vertical"
-        android:background="#33000000">
+        android:text="Archivo no válido"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#7A0C0C"
+        android:gravity="center" />
 
-        <ImageButton
-            android:id="@+id/btnBackToUserMode"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@android:drawable/ic_menu_revert"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@android:color/white"
-            android:contentDescription="Regresar" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MENÚ ADMINISTRADOR"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:fontFamily="@font/goldman_regular"
-            android:layout_marginStart="15dp" />
-    </LinearLayout>
-
-    <!-- MENU OPTIONS -->
-    <LinearLayout
+    <TextView
+        android:id="@+id/dialog_error_pdf"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbarAdmin"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:gravity="center"
-        android:padding="24dp">
+        android:text="Solo se permiten archivos PDF."
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnGestionInventario"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="GESTIÓN DE INVENTARIO"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:fontFamily="@font/goldman_regular"
-            android:background="@drawable/boton_redondeado"
-            android:backgroundTint="#590000"
-            android:layout_marginBottom="25dp" />
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Aceptar"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#7A0C0C"
+        android:textColor="#FFFFFF" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnMarcarAsistencias"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="MARCAR ASISTENCIAS"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:fontFamily="@font/goldman_regular"
-            android:background="@drawable/boton_redondeado"
-            android:backgroundTint="#590000" />
-
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/boton_redondeado"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCESO RESTRINGIDO"
+        android:textColor="#590000"
+        android:textSize="20sp"
+        android:fontFamily="@font/goldman_regular"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese la clave de seguridad para entrar al panel de administración."
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etClaveAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clave de seguridad"
+        android:inputType="textPassword"
+        android:background="@drawable/boton_redondeado"
+        android:backgroundTint="#EEEEEE"
+        android:padding="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginBottom="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmarClave"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CONFIRMAR"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/goldman_regular"
+        android:background="@drawable/boton_redondeado"
+        android:backgroundTint="#590000"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/btnCancelarClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textColor="#757575"
+        android:fontFamily="@font/inter_regular"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>
